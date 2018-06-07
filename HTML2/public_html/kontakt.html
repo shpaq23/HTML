@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Kontakt</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+	</head>
+	<body>
+		<header id = "header">
+		
+			<div id = "title">
+				<h1>Cats of the world</h1>
+			</div>
+			<div id = "background">
+				<img src="grafika/background.jpg" alt="background" />
+			</div>
+		</header>
+		<nav id="top-menu">
+			<ul>
+				<li><a href = "rasy.html">Rasy</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="FIFe.html">FIFe</a></li>
+				<li><a class = "active" href="kontakt.html">Kontakt</a></li>
+				<li><a href="admin.html">Login</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+		
+		
+			<div class = "slideshow" id="left-col">
+			<h1> Kot dnia </h1>
+				<img class ="mySlides fade" src ="grafika/slideshow/cat1.jpg">
+				<img class ="mySlides fade" src ="grafika/slideshow/cat2.jpg">
+				<img class ="mySlides fade" src ="grafika/slideshow/cat3.jpg">
+				<img class ="mySlides fade" src ="grafika/slideshow/cat4.jpg">
+				<img class ="mySlides fade" src ="grafika/slideshow/cat5.jpg">
+					
+			</div>
+			
+			<form id ="kontakt">
+					<h1> Wypełnij formularz aby się z nami skontaktować</h1>
+				 <div class="row">
+						  <div class="col-25">
+							<label for="fname">Imię</label>
+						  </div>
+						  <div class="col-75">
+							<input type="text" id="fname" name="firstname" placeholder="Twoje imie..">
+						  </div>
+						</div>
+						<p class ="valid">Niepoprawne dane</p>
+						
+						<div class="row">
+						  <div class="col-25">
+							<label for="lname">Nazwisko</label>
+						  </div>
+						  <div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko.." >
+						  </div>
+						</div>
+						<p class ="valid">Niepoprawne dane</p>
+						
+						<div class="row">
+						  <div class="col-25">
+							<label for="email">E-mail</label>
+						  </div>
+						  <div class="col-75">
+							<input type="email" id="email" name="email" placeholder="Twoj E-mail.." >
+						  </div>
+						</div>
+						<p class ="valid">Niepoprawne dane</p>
+						
+						
+						<div class="row">
+						  <div class="col-25">
+							<label for="tel">Telefon</label>
+						  </div>
+						  <div class="col-75">
+							<input type="tel" id="tel" name="usrtel" placeholder="Twój telefon.." >
+						  </div>
+						</div>
+						<p class ="valid">Niepoprawne dane</p>
+						
+						<div class="row">
+						  <div class="col-25">
+							<label for="country">Kraj</label>
+						  </div>
+						  <div class="col-75">
+							<select id="country" name="country">
+							  <option value="australia">Polska</option>
+							  <option value="canada">Niemcy</option>
+							  <option value="usa">Szwajcaria</option>
+							  <option value="usa">Anglia</option>
+							</select>
+						  </div>
+						</div>
+						
+						<div class="row">
+						  <div class="col-25">
+							<label for="kom">Wiadomość</label>
+						  </div>
+						  <div class="col-75">
+							<textarea  id="kom" name="Wiadomość" placeholder="Napisz wiadomość" style="height:200px" ></textarea>
+						  </div>
+						</div>
+						<p class ="valid">Niepoprawne dane</p>
+						
+						<div class="row">
+						  <input onclick ="Valid()" type="button" value="Wyślij">
+						</div>
+			</form>		
+		
+		
+			
+			
+		</section>
+		<footer id="footer">
+			Copyrights &copy; 2018 Michał Szpak
+		</footer>
+	
+	<script src ="JavaScript/StickyBar.js"></script>
+	<script src ="JavaScript/slideshow.js"></script>
+	<script src ="JavaScript/formvalid.js"></script>
+	</body>
+</html>
+

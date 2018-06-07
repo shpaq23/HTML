@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+	</head>
+	<body>
+		<header id = "header">
+		
+			<div id = "title">
+				<h1>Cats of the world</h1>
+			</div>
+			<div id = "background">
+				<img src="grafika/background.jpg" alt="background" />
+			</div>
+		</header>
+		<nav id="top-menu">
+			<ul id = "menu" class = "topnav">
+				<li><a href = "rasy.html">Rasy</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="FIFe.html">FIFe</a></li>
+				<li><a  href="kontakt.html">Kontakt</a></li>
+				<li class = "active"><a href="admin.html">Login</a></li>
+				
+				
+			</ul>
+		</nav>
+		<section id="content">
+			<div id="left-col" class ="left-col-admin">
+					<ul>
+						<li><a href="#h1" onclick = "B1()"><b>Dodawanie zdjęć </b></a></li>
+						<li><a href="#h1" onclick = "B2()"><b>Statystyki </b></a></li>
+						
+					</ul>
+				</div>
+				
+			<div id ="adminpanel">
+				<div id="zdjecia">
+					<h1>Dodawanie zdjęć </h1>
+					<div id ="right">
+						<input id="files" type="file" multiple/>
+						<p> Liczba przesłanych zdjęć:</p>
+						<label id="liczba">0</label>
+						<p> Zdjęcia w galerii:</p>
+						<label id="ktore"></label>
+					</div>
+					<output id="result" />
+					
+				</div>
+				<div id="statystyki">
+					<h1>Statystyki</h1>
+						<div id = "chart"></div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<div id = "loginpanel">
+				<div class = "imgcontainer">
+					<img src = "grafika/avatar2.jpg" alt="Avatar" class= "avatar">
+				</div>
+				<div class = "container">
+					<label for="uname"><b>Nazwa użytkownika</b></label>
+					<input type="text" placeholder="Enter Username" id="uname">
+
+					<label for="psw"><b>Hasło</b></label>
+					<input type="password" placeholder="Enter Password" id="psw">
+					<p id = "incorrect">Błędny login lub hasło</p>
+					<button onclick = "login()" type="submit">Login</button>
+				</div>
+			</div>
+			
+		</section>
+		
+		
+		<footer id="footer">
+			Copyrights &copy; 2018 Michał Szpak
+		</footer>
+		<script src = "JavaScript/navigation.js"></script>
+		<script src ="JavaScript/jquery-3.3.1.min.js"></script>
+		<script src = "JavaScript/upload.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		
+	</body>
+</html>
+
